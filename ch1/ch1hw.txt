@@ -1,0 +1,97 @@
+﻿#R1.1, R1.2, R1.3, R1.4, R1.5, R1.6, R1.7, R1.10, R1.11, R1.12, R1.13, R1.14
+
+
+R1.1:
+A computer program is a sequence of instructions and decisions, while programming
+is the act of designing and implementing the aforementioned programs.
+
+
+R1.2
+Programs and user data are usually stored on hard drives/ssds, and programs are loaded
+into computer memory when programs are running.
+
+
+R1.3
+Output devices such as screens and speakers provide the user with information, while the user can input information using a touch screen, keyboard, or mouse.
+
+
+R 1.4
+My phone is a programmable computer because it can do numerous functions, from using different apps to doing many mathematical operations.
+
+
+R 1.5
+Machine code is numeric and it is error prone. C++, however, is more readable by humans and more accurately follows the pseudo code. Additionally, machine code is programmed differently for each chipset, but c++ can be used across multiple ,achines.
+
+
+R 1.6
+1. /users/anishladdha/introC/ch1/hello.cpp
+2. ~/opt/anaconda3/pkgs/libcxx/include/c++/v1/iostream
+R 1.7
+6 * 7 = 42
+
+
+
+
+R1.10
+hello.cpp program:
+
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+cout << “Hello World” << endl;
+return 0;
+}
+
+
+
+
+
+
+Compile error 1: 
+In line 5, you put coutt instead of cout
+Compile error 2:
+you do cout >> instead of cout <<
+Compiler error 3:
+You do reurn instead of return in line 6
+Runtime error:  you do  cout << “Hello Wrld” << endl; instead of cout << “Hello World” << endl;
+
+
+R 1.11:
+You discover compile time errors when you try to compile your program, and before you even try to run it. You discover runtime errors when running a program and it does something you didnt want it to do.
+
+
+R 1.12:
+Balance = 1000
+Months = 0
+While balance is bigger than 0:
+        Interest = balance *0.005
+        Balance = balance + interest - 500
+        Month ++
+Years = months / 12
+Return years
+
+
+R 1.13:
+The 0.5% each month will be > $1 so the money will never run out, and the program would go on infinitely
+
+
+Month = 0
+
+
+
+
+While balance >= withdrawn:
+        Balance = balance + (balance*percent_per_month)
+        Balance = ba;ance-withdrawn
+        Month ++
+Print month
+
+
+R 1.14:
+side_walls = width * height * 2
+Long_walls = length * height * 2
+window_door_area = wind_height*wind_width
+total_window_door = window_door_area * number_of_wd
+Exterior_paint_area = side_walls + long_walls - total_window_door
