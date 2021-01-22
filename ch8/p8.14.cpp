@@ -14,49 +14,42 @@ int main()
 	int chars, words, lines;
 
 
-	String line;
-	String word;
-	bool exists = true;
-	String filename;
+	string line;
+	string word;
+	bool flag = true;
+	string usr_file;
 
-	while(exists){
+	while(flag){
 		chars=0;
 		words=0;
 		lines=0;
 
-		cout<< "File name?";
-		cin <<filename;
+		cout<< "Please enter the name of the file: ";
+		cin>>usr_file;
 
 
-		ifstream in_file;
-		in_file.open(filename);
-		if (in_file.fail())
+		ifstream read_file;
+		usr_file.open(usr_file);
+		if (read_file.fail())
 		{
-			exists = false;
+			flag = false;
 		}
 		else
 		{
-			while (getline(in_file, line))
+			while (getline(read_file, line))
 			{
-				lines ++;
+				lines++;
 				isstringstream iss (line);
 
 				while (iss >> word)
 				{
-					words ++;
-					chars += word.size()+1;
-					chars --;
+					words++;
+					chars+= word.size()+1;
+					chars--;
 				}
 				cout<< chars << words << lines;
-
 			}
-
 		}
-
-
-
-
-
 	}
 
 
